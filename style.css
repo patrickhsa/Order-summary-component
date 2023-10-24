@@ -1,0 +1,153 @@
+:root {
+    /*Primary colors*/
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+
+    /*Neutral colors*/
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: var(--pale-blue);
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: repeat-x;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /*Alinha verticalmente*/
+    align-items: center; /*Alinha horizontalmente*/
+    height: 100vh;
+}
+
+main {
+    margin-top: 7em;
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    height: 700px;   
+    background-color: #FFFFFF;
+    border-radius: 25px;
+}
+
+.hero-image {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;    
+}
+
+h1 {
+    font-size: 28px;
+    color: var(--dark-blue);
+    font-weight: 900;
+    margin: 30px 0 20px 0;
+    text-align: center;
+}
+
+h2 {
+    font-size: 16px;
+    color: var(--desaturated-blue);
+    font-weight: 500;
+    margin: 0 50px 20px 50px;
+    text-align: center;
+}
+
+.signature {
+    max-width: 85%;
+    background-color: var(--very-pale-blue);
+    margin: 10px 0 20px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;    
+    border-radius: 10px;
+}
+
+.icon-music {
+    width: 40px;
+    height: 40px;
+    padding: 20px;
+}
+
+.annual-plan {
+    margin: 0 80px 0 0;
+}
+
+h4 {
+    font-size: 16px;
+    font-weight: 900;    
+    color: var(--dark-blue);
+    padding-bottom: 5px;
+    white-space: nowrap; /*usado para que o texto não quebre a linha*/
+}
+
+h5 {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--desaturated-blue);
+}
+
+.signature a {
+    margin: 0 20px 0 0;
+    color: var(--bright-blue);
+    font-size: 14px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.signature a:hover {
+    text-decoration: none;
+    color: var(--desaturated-blue);
+}
+
+button {
+    background-color: var(--bright-blue);
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    margin: 10px 30px 20px 30px;
+    padding: 15px 0;
+    border-radius: 10px;
+    cursor: pointer;
+    /*box-shadow: 0 20px 10px 0 var(--bright-blue);*/
+}
+
+button:hover {
+    background-color: var(--desaturated-blue);
+}
+
+h3 {
+    text-align: center;
+    font-size: 16px;
+    color: var(--desaturated-blue);
+    font-weight: 700;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+h3:hover {
+    color: var(--dark-blue);
+}
+
+@media screen and (max-width: 475px) {
+
+    body {
+        background-image: url(images/pattern-background-mobile.svg);
+    }
+
+    main {
+        width: 350px;
+    }
+
+    footer {        
+        
+        font-size: 8px;
+    }   
+    
+}
